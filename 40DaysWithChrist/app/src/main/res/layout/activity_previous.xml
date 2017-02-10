@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@drawable/background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.a40dayswithchrist.PreviousActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:text="@string/title"
+        android:textSize="@dimen/title_size"
+        android:textColor="@color/text_yellow"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_title"
+        />
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="@dimen/margin_title"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/border"
+        android:layout_marginBottom="@dimen/margin_title"
+        android:id="@+id/relativeLayout">
+        <TextView
+            android:textColor="@color/text_yellow"
+            android:layout_width="@dimen/width_title"
+            android:layout_height="wrap_content"
+            android:text="@string/previus_title"
+            android:id="@+id/textView"
+            android:textSize="@dimen/tsubitle_size"
+            android:padding="@dimen/subtitle_pading"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginBottom="10dp"
+        android:text="@string/home"
+        android:id="@+id/buttonHome"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/subtitle_pading"
+        android:textSize="@dimen/button_text"
+        android:background="@drawable/border"
+        android:textColor="@color/text_yellow"
+        />
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#292929"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/relativeLayout2"
+        android:layout_above="@+id/buttonHome"
+        android:layout_alignLeft="@+id/buttonHome"
+        android:layout_alignStart="@+id/buttonHome"
+        android:layout_alignRight="@+id/buttonHome"
+        android:layout_alignEnd="@+id/buttonHome">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:id="@+id/player"
+    >
+
+    <ImageView
+        android:layout_width="@dimen/play_butt_width"
+        android:layout_height="@dimen/play_butt_height"
+        android:id="@+id/imageViewBack"
+        android:src="@drawable/back"
+        android:layout_alignTop="@+id/imageViewSlow"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        />
+
+    <ImageView
+        android:layout_width="@dimen/play_butt_width"
+        android:layout_height="@dimen/play_butt_height"
+        android:id="@+id/imageViewSlow"
+        android:src="@drawable/slow"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/imageViewBack" />
+
+    <ImageView
+        android:layout_width="@dimen/play_butt_width"
+        android:layout_height="@dimen/play_butt_width"
+        android:id="@+id/imageViewPlay"
+        android:layout_toEndOf="@+id/imageViewSlow"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/play"
+
+        />
+
+    <ImageView
+        android:layout_width="@dimen/play_butt_width"
+        android:layout_height="@dimen/play_butt_height"
+        android:id="@+id/imageViewFast"
+        android:src="@drawable/fast"
+        android:layout_alignTop="@+id/imageViewSlow"
+        android:layout_toEndOf="@+id/imageViewPlay"
+        android:layout_centerVertical="true"
+        />
+    <ImageView
+        android:layout_width="@dimen/play_butt_width"
+        android:layout_height="@dimen/play_butt_height"
+        android:id="@+id/imageViewNext"
+        android:src="@drawable/next"
+        android:layout_alignTop="@+id/imageViewSlow"
+        android:layout_toEndOf="@+id/imageViewFast"
+        android:layout_centerVertical="true"
+        />
+</RelativeLayout>
+
+
+    </RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/relativeLayout"
+    android:layout_alignLeft="@id/buttonHome"
+    android:layout_alignRight="@id/buttonHome"
+    android:id="@+id/linearLayout">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout3"
+        android:background="@drawable/border"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/buttonHome"
+        android:layout_weight="1"
+        >
+
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:text="Day 1"
+            android:id="@+id/textViewDay1"
+            android:textSize="@dimen/textview_text"
+
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:textSize="@dimen/textview_text"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:text="Day 2"
+            android:id="@+id/textViewDay2"
+            android:layout_below="@+id/textViewDay1"
+            android:layout_centerHorizontal="true"
+
+            />
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:text="Day 3"
+            android:id="@+id/textViewDay3"
+            android:layout_below="@+id/textViewDay2"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/textview_text"
+             />
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:text="Day 4"
+            android:id="@+id/textViewDay4"
+            android:layout_below="@+id/textViewDay3"
+            android:layout_alignEnd="@+id/textViewDay3"
+            android:textSize="@dimen/textview_text"
+
+            />
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:text="Day 5"
+            android:id="@+id/textViewDay5"
+            android:layout_below="@+id/textViewDay4"
+            android:layout_alignEnd="@+id/textViewDay4"
+            android:textSize="@dimen/textview_text"
+
+            />
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:text="Day 6"
+            android:id="@+id/textViewDay6"
+            android:layout_below="@+id/textViewDay5"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/textview_text"
+
+            />
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:text="Day 7"
+            android:id="@+id/textViewday7"
+            android:layout_below="@+id/textViewDay6"
+            android:layout_alignEnd="@+id/textViewDay6"
+            android:textSize="@dimen/textview_text"
+            />
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:text="Day 8"
+            android:id="@+id/textViewday8"
+            android:layout_below="@+id/textViewday7"
+            android:layout_alignEnd="@+id/textViewday7"
+            android:textSize="@dimen/textview_text"
+            />
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:text="Day 9"
+            android:id="@+id/textViewday9"
+            android:layout_below="@+id/textViewday8"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/textview_text"
+
+
+     />
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:text="Day 10"
+            android:id="@+id/textViewday10"
+            android:layout_below="@+id/textViewday9"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/textview_text"
+
+
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/relativeLayout3"
+        android:layout_alignEnd="@+id/buttonHome"
+        android:layout_toEndOf="@+id/relativeLayout3"
+        android:layout_alignBottom="@+id/relativeLayout3"
+        android:id="@+id/relativeLayout4"
+        android:background="@drawable/border"
+        android:layout_weight="1"
+        >
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:text="Day 11"
+            android:id="@+id/textViewDay11"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/textview_text"
+
+
+
+            />
+
+        <TextView
+            android:textSize="@dimen/textview_text"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:text="Day 12"
+            android:id="@+id/textViewDay12"
+            android:layout_below="@+id/textViewDay11"
+            android:layout_centerHorizontal="true"
+
+            />
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:text="Day 13"
+            android:id="@+id/textViewday13"
+            android:layout_below="@+id/textViewDay12"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/textview_text"
+
+            />
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:text="Day 14"
+            android:id="@+id/textViewday14"
+            android:layout_below="@+id/textViewday13"
+            android:layout_alignEnd="@+id/textViewday13"
+            android:textSize="@dimen/textview_text"
+
+
+            />
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:text="Day 15"
+            android:id="@+id/textViewday15"
+            android:layout_below="@+id/textViewday14"
+            android:layout_alignEnd="@+id/textViewday14"
+            android:textSize="@dimen/textview_text"
+
+        />
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:text="Day 16"
+            android:id="@+id/textViewday16"
+            android:layout_below="@+id/textViewday15"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/textview_text"
+
+            />
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:text="Day 17"
+            android:id="@+id/textViewday17"
+            android:layout_below="@+id/textViewday16"
+            android:layout_alignEnd="@+id/textViewday16"
+            android:textSize="@dimen/textview_text"
+
+            />
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:text="Day 18"
+            android:id="@+id/textViewday18"
+            android:layout_below="@+id/textViewday17"
+            android:layout_alignEnd="@+id/textViewday17"
+            android:textSize="@dimen/textview_text"
+
+            />
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:text="Day 19"
+            android:id="@+id/textViewday19"
+            android:layout_below="@+id/textViewday18"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/textview_text"
+
+
+            />
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:text="Day 20"
+            android:id="@+id/textViewday20"
+            android:layout_below="@+id/textViewday19"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/textview_text"
+
+
+            />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/relativeLayout6"
+    android:background="@drawable/border"
+    android:layout_centerVertical="true"
+    android:layout_alignStart="@+id/buttonHome"
+    android:layout_weight="1"
+    >
+
+
+    <TextView
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:text="Day 21"
+        android:id="@+id/textViewDay21"
+        android:textSize="@dimen/textview_text"
+
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:textSize="@dimen/textview_text"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:text="Day 22"
+        android:id="@+id/textViewDay22"
+        android:layout_below="@+id/textViewDay21"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <TextView
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:text="Day 23"
+        android:id="@+id/textViewDay23"
+        android:layout_below="@+id/textViewDay22"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/textview_text"
+        />
+
+    <TextView
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:text="Day 24"
+        android:id="@+id/textViewDay24"
+        android:layout_below="@+id/textViewDay23"
+        android:layout_alignEnd="@+id/textViewDay23"
+        android:textSize="@dimen/textview_text"
+
+        />
+
+    <TextView
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:text="Day 25"
+        android:id="@+id/textViewDay25"
+        android:layout_below="@+id/textViewDay24"
+        android:layout_alignEnd="@+id/textViewDay24"
+        android:textSize="@dimen/textview_text"
+
+        />
+
+    <TextView
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:text="Day 26"
+        android:id="@+id/textViewDay26"
+        android:layout_below="@+id/textViewDay25"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/textview_text"
+
+        />
+
+    <TextView
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:text="Day 27"
+        android:id="@+id/textViewday27"
+        android:layout_below="@+id/textViewDay26"
+        android:layout_alignEnd="@+id/textViewDay26"
+        android:textSize="@dimen/textview_text"
+        />
+
+    <TextView
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:text="Day 28"
+        android:id="@+id/textViewday28"
+        android:layout_below="@+id/textViewday27"
+        android:layout_alignEnd="@+id/textViewday27"
+        android:textSize="@dimen/textview_text"
+        />
+
+    <TextView
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:text="Day 29"
+        android:id="@+id/textViewday29"
+        android:layout_below="@+id/textViewday28"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/textview_text"
+
+
+        />
+
+    <TextView
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:text="Day 30"
+        android:id="@+id/textViewday30"
+        android:layout_below="@+id/textViewday29"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/textview_text"
+
+
+        />
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout7"
+        android:background="@drawable/border"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/buttonHome"
+        android:layout_weight="1"
+        >
+
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:text="Day 31"
+            android:id="@+id/textViewDay31"
+            android:textSize="@dimen/textview_text"
+
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:textSize="@dimen/textview_text"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:text="Day 32"
+            android:id="@+id/textViewDay32"
+            android:layout_below="@+id/textViewDay31"
+            android:layout_centerHorizontal="true"
+
+            />
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:text="Day 33"
+            android:id="@+id/textViewDay33"
+            android:layout_below="@+id/textViewDay32"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/textview_text"
+            />
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:text="Day 34"
+            android:id="@+id/textViewDay34"
+            android:layout_below="@+id/textViewDay33"
+            android:layout_alignEnd="@+id/textViewDay33"
+            android:textSize="@dimen/textview_text"
+
+            />
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:text="Day 35"
+            android:id="@+id/textViewDay35"
+            android:layout_below="@+id/textViewDay34"
+            android:layout_alignEnd="@+id/textViewDay34"
+            android:textSize="@dimen/textview_text"
+
+            />
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:text="Day 36"
+            android:id="@+id/textViewDay36"
+            android:layout_below="@+id/textViewDay35"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/textview_text"
+
+            />
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:text="Day 37"
+            android:id="@+id/textViewday37"
+            android:layout_below="@+id/textViewDay36"
+            android:layout_alignEnd="@+id/textViewDay36"
+            android:textSize="@dimen/textview_text"
+            />
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:text="Day 38"
+            android:id="@+id/textViewday38"
+            android:layout_below="@+id/textViewday37"
+            android:layout_alignEnd="@+id/textViewday37"
+            android:textSize="@dimen/textview_text"
+            />
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:text="Day 39"
+            android:id="@+id/textViewday39"
+            android:layout_below="@+id/textViewday38"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/textview_text"
+
+
+            />
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:text="Day 40"
+            android:id="@+id/textViewday40"
+            android:layout_below="@+id/textViewday39"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/textview_text"
+
+
+            />
+    </RelativeLayout>
+</LinearLayout>
+
+</RelativeLayout>

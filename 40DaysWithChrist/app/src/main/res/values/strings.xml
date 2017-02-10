@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">40DaysWithChrist</string>
+    <string name="title">40 Days with Christ</string>
+    <string name="previous">PREVIOUS SESSIONS</string>
+    <string name="today">TODAY’S DEVOTIONAL</string>
+    <string name="contact">CONTACT US </string>
+    <string name="home">HOME </string>
+    <string name="previus_title">Select from below to play a previous session</string>
+</resources>

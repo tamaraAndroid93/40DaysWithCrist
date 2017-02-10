@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+android:background="@drawable/background"
+    android:clickable="false"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.a40dayswithchrist.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:text="@string/title"
+        android:textSize="@dimen/title_size"
+        android:textColor="@color/text_yellow"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_title"
+        />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/imageView"
+    android:layout_marginTop="@dimen/margin_title"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/border"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Today is day 1"
+        android:id="@+id/textView"
+        android:textSize="@dimen/tsubitle_size"
+        android:textColor="@color/text_yellow"
+        android:padding="@dimen/subtitle_pading"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:text="@string/previous"
+        android:id="@+id/buttonPrevious"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:textSize="@dimen/button_text"
+        android:layout_margin="@dimen/subtitle_pading"
+        android:background="@drawable/border"
+        android:textColor="@color/text_yellow"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:text="@string/today"
+        android:id="@+id/buttonToday"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@id/buttonPrevious"
+        android:layout_margin="@dimen/subtitle_pading"
+        android:textSize="@dimen/button_text"
+        android:background="@drawable/border"
+        android:textColor="@color/text_yellow"
+        />
+
+    <Button
+        android:layout_marginBottom="10dp"
+        android:id="@+id/buttonContactUs"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:text="@string/contact"
+        android:textColor="@color/text_yellow"
+        android:textSize="@dimen/tsubitle_size"
+        android:background="@drawable/border"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/Play2"
+        android:layout_alignStart="@+id/Play2"
+        android:layout_alignRight="@+id/Play2"
+        android:layout_alignEnd="@+id/Play2" />
+<RelativeLayout
+    android:id="@+id/Play2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#292929"
+    android:layout_marginTop="87dp"
+    android:layout_below="@+id/buttonPrevious"
+    android:layout_alignLeft="@+id/buttonPrevious"
+    android:layout_alignStart="@+id/buttonPrevious"
+    android:layout_alignRight="@+id/buttonPrevious"
+    android:layout_alignEnd="@+id/buttonPrevious">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:id="@+id/playerrel"
+    >
+    <ImageView
+        android:layout_width="@dimen/play_butt_width"
+        android:layout_height="@dimen/play_butt_height"
+        android:id="@+id/imageViewBack"
+        android:src="@drawable/back"
+        android:layout_alignTop="@+id/imageViewSlow"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        />
+
+    <ImageView
+        android:layout_width="@dimen/play_butt_width"
+        android:layout_height="@dimen/play_butt_height"
+        android:id="@+id/imageViewSlow"
+        android:src="@drawable/slow"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/imageViewBack" />
+
+    <ImageView
+        android:layout_width="@dimen/play_butt_width"
+        android:layout_height="@dimen/play_butt_width"
+        android:id="@+id/imageViewPlay"
+        android:layout_toEndOf="@+id/imageViewSlow"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/play"
+
+        />
+
+    <ImageView
+        android:layout_width="@dimen/play_butt_width"
+        android:layout_height="@dimen/play_butt_height"
+        android:id="@+id/imageViewFast"
+        android:src="@drawable/fast"
+        android:layout_alignTop="@+id/imageViewSlow"
+        android:layout_toEndOf="@+id/imageViewPlay"
+        android:layout_centerVertical="true"
+        />
+    <ImageView
+        android:layout_width="@dimen/play_butt_width"
+        android:layout_height="@dimen/play_butt_height"
+        android:id="@+id/imageViewNext"
+        android:src="@drawable/next"
+        android:layout_alignTop="@+id/imageViewSlow"
+        android:layout_toEndOf="@+id/imageViewFast"
+        android:layout_centerVertical="true"
+        />
+</RelativeLayout>
+
+
+</RelativeLayout>
+
+</RelativeLayout>
+
